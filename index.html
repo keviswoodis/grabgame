@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href="grab.css">
+        <link rel = "stylesheet" href="jquery-ui.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <script src = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>Find 10!</h1>
+            <h1 id ="timer"></h1>
+            <h1 id = "score"></h1>
+                
+        </header>
+
+        <div id = "category-container">
+                
+                
+            <div id = "celebration"></div>
+            <div id = "category"></div>      
+        </div>
+        <main>
+            <div class="game-area">
+                
+                <div id = "wordbox"><h1>Welcome to Find 10 <br><br> You have 25 seconds to find 
+                10 words in the given category. <br><br>
+                Find them all: The clock resets and another category starts. <br>
+                Click 3 Incorrect tiles or run out of time: Game Over. <br><br>
+
+                 See how many boards you can clear! Good luck.</h1>
+                <br>
+                
+                <div id = "start"><button id="startbutton" onClick="populateBoard()">START</button></div>
+            </div>
+                
+        </div>
+
+        </main>
+    </body>
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+    <script src = "grab.js"></script>
+</html>

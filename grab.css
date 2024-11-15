@@ -1,0 +1,311 @@
+body, header, main, .game-area, #wordbox, .wordcard, #category {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    
+    height: 720px;
+    
+}
+
+body.flash {
+    animation: flash 200ms;
+}
+
+#category h2.flash {
+    animation: flash 4000ms;
+    animation-iteration-count: infinite;
+}
+
+#container {
+    background-color: white; 
+    animation: flash 1s;
+}
+
+
+.game-area{
+    display: grid;
+    place-items: center;
+    background-color: black;
+    margin: auto 20%;
+    padding: 25px 50px;
+    overflow: auto;
+    color: white;
+    border-radius: 10px;
+}
+
+.game-area.rock {
+    animation: rock 200ms;
+}
+
+#category{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: white;
+    padding-top: 3px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#category-container {
+    margin: auto 20%;
+    display: grid;
+    place-items: center;
+}
+
+#category h2 {
+    color: black;
+    font-family:system-ui, -apple-system, Roboto;
+    font-size: 250%;
+    margin: auto 11%;
+    border-radius: 5px;
+    padding: 5px;
+    
+
+}
+
+header {
+    background-color: white;
+    padding: 5px;
+    margin: auto 20%;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    border-bottom: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: black;
+    
+}
+header h1 {
+    font-family: Bangers;
+    color: black;
+    font-kerning: 2px;
+    margin: 10px;
+    float: left;
+}
+
+header h2 {
+    float: left;
+}
+
+
+
+#wordbox {
+    margin: auto;
+    align-items: center;
+    display: block; 
+    height: 620px;
+    width: 900px;
+    overflow: auto;
+    /*border: 1px solid white;*/
+    padding: 1px;
+    border-radius: 10px;
+    
+    
+}
+
+.wordcard.rock{
+    animation: rock 500ms; 
+}
+
+#wordbox.rock{
+    animation: rock 250ms;
+}
+#wordbox h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size:xx-large;
+    margin: 50px;
+    
+}
+
+.wordcard{
+    float: left;
+    width: 160px;
+    height: 80px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    margin: 10px;
+    background-color: green;
+    box-shadow:
+    inset 60px 0 120px #fff,  /* left magenta */
+    inset -60px 0 120px #000fff; /* right cyan */
+    animation: 1000ms BounceIn;
+    text-wrap:wrap;
+
+}
+
+.wordcard:hover{
+ 
+    
+    color: white;
+    cursor:grab;
+}
+
+.wordcard h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    
+}
+
+#startbutton {
+    background-color: black;
+    color: white;
+    margin: auto 50px;
+    height: 50px;
+    width: 100px;
+    border: blue solid 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#startbutton:hover {
+    border: 3px solid white;
+    color: blue;
+}
+
+
+#celebration h1 {
+    color: black;
+    stroke:blue 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 200%;
+    animation: wow 1s;
+
+}
+
+@keyframes shimmer {
+    0% {box-shadow: 1px 1px red;}
+    10% {box-shadow: 1px 1px orange;} 
+    20% {box-shadow: inset 1px 1px yellow;} 
+    30% {box-shadow: inset 1px 1px green;} 
+    40% {box-shadow: 1px 1px blue;} 
+    50% {box-shadow: 1px 1px purple;} 
+    60% {box-shadow: inset 1px 1px white;} 
+    70% {box-shadow: inset 1px 1px brown;} 
+    80% {box-shadow: inset 1px 1px red;}
+    90% {box-shadow: 1px 1px orange;}
+    100% {box-shadow:1px 1px yellow;}
+}
+
+@keyframes flash {
+    0% {background-color: red;}
+    10% {background-color: orange;} 
+    20% {background-color: yellow;} 
+    30% {background-color: green;} 
+    40% {background-color: blue;} 
+    50% {background-color: purple;} 
+    60% {background-color: white;} 
+    70% {background-color: brown;} 
+    80% {background-color: red;}
+    90% {background-color: orange;}
+    100% {background-color:yellow;}
+}
+
+@keyframes flyIn {
+    0% {left:0;}
+    100% {left: 100%;}
+}
+
+@keyframes BounceIn {
+    0%{
+        opacity: 0;
+        transform: scale(0.3)
+            translate3d(0, 0, 0);
+    }
+
+    50% {
+        opacity: .9;
+        transform: scale(1.1);
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(.89);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1)
+            translate3d(0,0,0);
+    }
+}
+
+@keyframes rock {
+    25%{
+        rotate: 2deg; 
+    }
+
+    50% {
+        rotate: -2deg;
+    }
+
+    75% {
+        rotate: 2deg;
+    }
+
+}
+
+
+@keyframes wow {
+    0%{
+        opacity: 0; 
+        transform: scale(0.3)
+          
+    }
+
+    30%{
+        opacity: .9;
+        transform: scale(1.1);
+
+    }
+
+    60%{
+        opacity: 1; 
+        transform: scale(1.2);
+    }
+
+    80% {
+        opacity: .8;
+        transform: scale(1.3)    
+    }
+
+    90% {
+        opacity: .5;
+        transform: scale(1.4);
+        }
+    100% {
+        opacity: 0; 
+        transform: scale(1.5);
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    body {height: 680px;}
+    
+    .wordcard {
+        width: 110px;
+    }
+
+    #wordbox{
+        width: 800px;
+        height: 500px;
+    }
+
+    #wordbox h1 {
+        font-size: 100%;
+    }
+
+    .wordcard h2 {
+        font-size: 15px;
+    }
+    
+}
