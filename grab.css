@@ -16,19 +16,29 @@ main,
         background-color: #212121;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
+        font-size: 10px;
         padding: 1px;
     }
     #intro {
         padding: 20px;
     }
+
+    #start {
+        text-align: center;
+    }
+
+    #startbutton {
+        text-align: center;
+        height: 10vh;
+    }
     header h1 {
         font-family: Bangers;
+        font-size: 50px;
         text-align: center;
     }
 
     header {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     game-area {
         width: 100vw;
