@@ -230,8 +230,8 @@ function startTimer() {
 
         if (timeLeft <= 10){
             $("#category h2").addClass("flash").css({"border-radius": "25px"});
-            $(".game-area").css({"border": "red 3px solid"}
-            );
+            // $(".game-area").css({"border": "red 3px solid"}
+            // );
            
         }
 
