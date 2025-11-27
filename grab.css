@@ -30,6 +30,7 @@ main,
     #startbutton {
         text-align: center;
         height: 10vh;
+        width: 50vw;
     }
     header h1 {
         font-family: Bangers;
