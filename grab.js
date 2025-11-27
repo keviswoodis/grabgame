@@ -192,7 +192,7 @@ function checkWord(word, category, alt){
             incorrect= 0;
             score++;
             yay();
-            $("#score").empty().append(`<h4>Cleared: ${score}</h4>`);
+            
             
             setTimeout(()=>populateBoard(), 1000);
         }
@@ -237,7 +237,7 @@ function startTimer() {
 
         if (timeLeft <= 0) {
             gameOver("TIME'S UP!");
-            $("#category").removeClass("flash").css({"background-color":"white"});
+            $("#category").removeClass("flash").css({"background-color":"#212121"});
         }
     }, 1000);
 }
@@ -248,6 +248,7 @@ function gameOver(message){
     clearInterval(timer);
             $("#wordbox").hide();
             $("#category").empty().append(`<h2>GAME OVER!! ${message}</h2>`);
+            $("#score").empty().append(`<h4>Cleared: ${score}</h4>`);
             $(".game-area").hide();
 }
 
