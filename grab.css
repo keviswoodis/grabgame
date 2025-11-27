@@ -19,7 +19,9 @@ main,
         font-size: 12px;
         padding: 1px;
     }
-
+    #intro {
+        padding: 10px;
+    }
     header h1 {
         text-align: center;
     }
