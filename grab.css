@@ -20,7 +20,7 @@ main,
         padding: 1px;
     }
     #intro {
-        padding: 10px;
+        padding: 20px;
     }
     header h1 {
         font-family: Bangers;
@@ -103,6 +103,10 @@ main,
 
     #wordbox.rock {
         animation: rock 250ms;
+    }
+
+     .game-area.rock {
+        animation: rock 200ms;
     }
 }
 
